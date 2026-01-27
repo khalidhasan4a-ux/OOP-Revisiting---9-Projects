@@ -1,0 +1,22 @@
+class Animal {
+    protected String type = "Animal";
+
+    void show() {
+        System.out.println("This is animal");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println(type + " says Woof");
+    }
+}
+
+public class InheritanceProtected {
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+        d.show();
+        d.bark();
+    }
+}
