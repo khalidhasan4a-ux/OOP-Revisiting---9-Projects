@@ -7,11 +7,14 @@ class Car {
     }
 }
 
-public class Main {
+public class ClassesObjects {
     public static void main(String[] args) {
-        Car myCar = new Car(); // object creation
+
+        Car myCar = new Car();
         myCar.color = "Red";
         myCar.speed = 100;
+
+        System.out.println(myCar.color);
         myCar.drive();
     }
 }
