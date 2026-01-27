@@ -1,0 +1,22 @@
+abstract class Animal2 {
+    abstract void sound();
+
+    void sleep() {
+        System.out.println("Sleeping");
+    }
+}
+
+class Dog2 extends Animal2 {
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+public class AbstractDemo {
+    public static void main(String[] args) {
+
+        Dog2 d = new Dog2();
+        d.sound();
+        d.sleep();
+    }
+}
